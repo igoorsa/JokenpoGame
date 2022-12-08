@@ -32,7 +32,7 @@ namespace GameJokenPO
         public int[] numeros = new int[3] { 0, 1, 2 };
 
         public static int numeroGanhador;
-        /*
+        
         public void Jogar(int numSorteado)
         {
             Thread.Sleep(100);
@@ -41,17 +41,14 @@ namespace GameJokenPO
             {
                 if(numeroJogado == numSorteado)
                 {
-                    MessageBox.Show("EMPATE");
                     numeroGanhador = 0;
                 }
                 else if (numSorteado == 1)
                 {
-                    MessageBox.Show("PERDEU");
                     numeroGanhador = -1;
                 }
                 else
                 {
-                    MessageBox.Show("GANHOU");
                     numeroGanhador = 1;
                 }
             }
@@ -60,17 +57,14 @@ namespace GameJokenPO
             {
                 if (numeroJogado == numSorteado)
                 {
-                    MessageBox.Show("EMPATE");
                     numeroGanhador = 0;
                 }
                 else if (numSorteado == 2)
                 {
-                    MessageBox.Show("PERDEU");
                     numeroGanhador = -1;
                 }
                 else
                 {
-                    MessageBox.Show("GANHOU");
                     numeroGanhador = 1;
                 }
             }
@@ -78,17 +72,14 @@ namespace GameJokenPO
             {
                 if (numeroJogado == numSorteado)
                 {
-                    MessageBox.Show("EMPATE");
                     numeroGanhador = 0;
                 }
                 else if (numSorteado == 0)
                 {
-                    MessageBox.Show("PERDEU");
                     numeroGanhador = -1;
                 }
                 else
                 {
-                    MessageBox.Show("GANHOU");
                     numeroGanhador = 1;
                     
                 }
@@ -97,6 +88,6 @@ namespace GameJokenPO
         
         }
 
-        */
+        
     }
 }

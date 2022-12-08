@@ -41,8 +41,12 @@
             this.btnPapel = new System.Windows.Forms.Button();
             this.btnTesoura = new System.Windows.Forms.Button();
             this.btnJOGAR = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Resultado = new System.Windows.Forms.Label();
+            this.Aposta = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.pictureYou)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Aposta)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -185,13 +189,49 @@
             this.btnJOGAR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnJOGAR.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnJOGAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnJOGAR.Location = new System.Drawing.Point(322, 400);
+            this.btnJOGAR.Location = new System.Drawing.Point(456, 400);
             this.btnJOGAR.Name = "btnJOGAR";
             this.btnJOGAR.Size = new System.Drawing.Size(173, 38);
             this.btnJOGAR.TabIndex = 16;
             this.btnJOGAR.Text = "JOGAR";
             this.btnJOGAR.UseVisualStyleBackColor = false;
             this.btnJOGAR.Click += new System.EventHandler(this.btnJOGAR_Click_1);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Snow;
+            this.label6.Location = new System.Drawing.Point(248, 407);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(92, 24);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "APOSTA ";
+            // 
+            // Resultado
+            // 
+            this.Resultado.AutoSize = true;
+            this.Resultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Resultado.ForeColor = System.Drawing.Color.Snow;
+            this.Resultado.Location = new System.Drawing.Point(12, 7);
+            this.Resultado.Name = "Resultado";
+            this.Resultado.Size = new System.Drawing.Size(20, 24);
+            this.Resultado.TabIndex = 18;
+            this.Resultado.Text = "?";
+            // 
+            // Aposta
+            // 
+            this.Aposta.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Aposta.Location = new System.Drawing.Point(367, 404);
+            this.Aposta.Name = "Aposta";
+            this.Aposta.Size = new System.Drawing.Size(61, 27);
+            this.Aposta.TabIndex = 19;
+            this.Aposta.Tag = "0";
+            this.Aposta.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // Form1
             // 
@@ -200,6 +240,9 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
+            this.Controls.Add(this.Aposta);
+            this.Controls.Add(this.Resultado);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnJOGAR);
             this.Controls.Add(this.btnTesoura);
             this.Controls.Add(this.btnPapel);
@@ -218,8 +261,12 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.MouseEnter += new System.EventHandler(this.Form1_MouseHover);
+            this.MouseLeave += new System.EventHandler(this.Form1_MouseHover);
+            this.MouseHover += new System.EventHandler(this.Form1_MouseHover);
             ((System.ComponentModel.ISupportInitialize)(this.pictureYou)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Aposta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,6 +286,9 @@
         private System.Windows.Forms.Button btnPapel;
         private System.Windows.Forms.Button btnTesoura;
         private System.Windows.Forms.Button btnJOGAR;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label Resultado;
+        private System.Windows.Forms.NumericUpDown Aposta;
     }
 }
 

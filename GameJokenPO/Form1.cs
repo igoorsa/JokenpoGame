@@ -17,11 +17,11 @@ namespace GameJokenPO
 {
     public partial class Form1 : Form
     {
+        private double result = 1000;
         public Form1()
         {
             InitializeComponent();
-
-            
+            Resultado.Text = $"{result:C}";
         }
 
         private void btnSair_Click(object sender, EventArgs e)
@@ -58,7 +58,6 @@ namespace GameJokenPO
 
         private void btnJOGAR_Click_1(object sender, EventArgs e)
         {
-
             
             Jokenpo jogar = new Jokenpo();
 
@@ -82,14 +81,45 @@ namespace GameJokenPO
                     }
                 }
                 pictureBox2.BackgroundImage = jogar.imgFormas[numSorteado];
-                
-                //jogar.Jogar(numSorteado);
+                jogar.Jogar(numSorteado);
+
+                if (Jokenpo.numeroGanhador == 0)
+                {
+                    DialogResult res =  MessageBox.Show("VOCÊ EMPATOU", "Você:", MessageBoxButtons.OK);
+                    if(res == DialogResult.OK)
+                    {
+                        double aposta = ((double)Aposta.Value);
+                    }
+                    
+                }
+                else if(Jokenpo.numeroGanhador > 0)
+                {
+                    DialogResult res = MessageBox.Show("VOCÊ GANHOU", "Você:", MessageBoxButtons.OK);
+                    if (res == DialogResult.OK)
+                    {
+                        double aposta = ((double)Aposta.Value);
+                        result += aposta;
+                    }
+                }
+                else
+                {
+                    DialogResult res = MessageBox.Show("VOCÊ PERDEU", "Você:", MessageBoxButtons.OK);
+                    if (res == DialogResult.OK)
+                    {
+                        double aposta = ((double)Aposta.Value);
+                        result -= aposta;
+                    }
+
+                }
                 
             });
             
 
         }
 
-        
+        private void Form1_MouseHover(object sender, EventArgs e)
+        {
+            Resultado.Text = $"{result:C}"; 
+        }
     }
 }
