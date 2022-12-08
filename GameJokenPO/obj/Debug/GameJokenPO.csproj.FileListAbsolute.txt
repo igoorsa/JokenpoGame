@@ -1,0 +1,11 @@
+E:\Curso C#\Aulas\GameJokenPO\GameJokenPO\bin\Debug\GameJokenPO.exe.config
+E:\Curso C#\Aulas\GameJokenPO\GameJokenPO\bin\Debug\GameJokenPO.exe
+E:\Curso C#\Aulas\GameJokenPO\GameJokenPO\bin\Debug\GameJokenPO.pdb
+E:\Curso C#\Aulas\GameJokenPO\GameJokenPO\obj\Debug\GameJokenPO.csproj.AssemblyReference.cache
+E:\Curso C#\Aulas\GameJokenPO\GameJokenPO\obj\Debug\GameJokenPO.csproj.SuggestedBindingRedirects.cache
+E:\Curso C#\Aulas\GameJokenPO\GameJokenPO\obj\Debug\GameJokenPO.Form1.resources
+E:\Curso C#\Aulas\GameJokenPO\GameJokenPO\obj\Debug\GameJokenPO.Properties.Resources.resources
+E:\Curso C#\Aulas\GameJokenPO\GameJokenPO\obj\Debug\GameJokenPO.csproj.GenerateResource.cache
+E:\Curso C#\Aulas\GameJokenPO\GameJokenPO\obj\Debug\GameJokenPO.csproj.CoreCompileInputs.cache
+E:\Curso C#\Aulas\GameJokenPO\GameJokenPO\obj\Debug\GameJokenPO.exe
+E:\Curso C#\Aulas\GameJokenPO\GameJokenPO\obj\Debug\GameJokenPO.pdb
